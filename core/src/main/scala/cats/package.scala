@@ -16,6 +16,8 @@ package object cats {
   /** [[cats.InjectK]][F, G] */
   type :≺:[F[_], G[_]] = InjectK[F, G]
 
+  type -->[A, B] = FunTo[A, B] 
+
   /**
    * Identity, encoded as `type Id[A] = A`, a convenient alias to make
    * identity instances well-kinded.
