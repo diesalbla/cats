@@ -149,7 +149,7 @@ class TestsConfig extends ScalaCheckSuite {
 
 class Tests extends TestsConfig with DisciplineSuite {
 
-nnnn  import KernelCheck._
+  import KernelCheck._
 
   test("The instances in scope are not ambiguous") {
     implicitly[Monoid[Option[String]]]
